@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: Apr 02, 2025 at 12:05 PM
+-- Generation Time: Apr 02, 2025 at 01:12 PM
 -- Server version: 8.0.30
 -- PHP Version: 8.1.10
 
@@ -18,7 +18,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `laptop thing`
+-- Database: `laptops`
 --
 
 -- --------------------------------------------------------
@@ -30,6 +30,7 @@ SET time_zone = "+00:00";
 CREATE TABLE `users` (
   `Id` int NOT NULL,
   `Username` varchar(255) NOT NULL,
+  `email` varchar(255) NOT NULL,
   `Password` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 

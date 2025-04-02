@@ -19,12 +19,12 @@ if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
 }
 
 
-$query = "INSERT INTO users (username, password, email,) VALUES (:username, :password, :email)";
+$query = "INSERT INTO users (username, email, password,) VALUES (:username, :email, :password,)";
 $something = $conn->prepare($query);
 $something->execute([
     'username' => $username,
-    'password' => password_hash($password, PASSWORD_DEFAULT),
     'email' => $email,
+    'password' => password_hash($password, PASSWORD_DEFAULT),
 ]);
 if ($something->rowCount() > 0) {
     echo "User registered successfully.";

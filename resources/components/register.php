@@ -7,7 +7,7 @@
 </head>
 <body>
     <h1>Register</h1>
-    <form action="registerController.php" method="post">
+    <form action="../../backend/registerController.php" method="post">
     <label for="username"></label>
     <input type="text" id="username" name="username" placeholder="Username"><br><br>
     <label for="password"></label>
