@@ -6,13 +6,14 @@
     <title>Register</title>
 </head>
 <body>
+    <h1>Register</h1>
     <form action="registerController.php" method="post">
     <label for="username"></label>
-    <input type="text" id="username" name="username">
+    <input type="text" id="username" name="username" placeholder="Username"><br><br>
     <label for="password"></label>
-    <input type="password" id="password" name="password" placeholder="Password">
+    <input type="password" id="password" name="password" placeholder="Password"><br><br>
     <label for="email"></label>
-    <input type="text" id="email" name="email">
+    <input type="text" id="email" name="email" placeholder="Email"><br><br>
     <input type="submit" value="Register">
     <p>Already have an account? <a href="login.php">Log in here</a>.</p>
     </form>

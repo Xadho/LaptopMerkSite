@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <a href="resources/components/login.php">Log in</a>
+    <a href="resources/components/register.php">Register</a>
 </body>
 </html>
